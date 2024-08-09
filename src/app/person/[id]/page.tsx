@@ -49,9 +49,12 @@ export default async function Person({
         <Profile profile={profile} />
       </div>
 
-      <div className={styles.box}>
-        <FinancialAssets financialAssets={profile.financialAssets} />
-      </div>
+      {
+        profile.financialAssets &&
+        <div className={styles.box}>
+          <FinancialAssets financialAssets={profile.financialAssets} />
+        </div>
+      }
     </>
   )
 }
