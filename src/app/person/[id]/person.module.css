@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 40px;
+}
+
+.box {
+  padding: 40px 20px;
+  background-color: #121b20;
+}

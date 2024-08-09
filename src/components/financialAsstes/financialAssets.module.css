@@ -1,0 +1,32 @@
+.profile__financialAssets {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.profile__financialAssets h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile__financialAssets .profile__financialAssets__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
+  gap: 10px;
+}
+@media (min-width: 600px) {
+  .profile__financialAssets .profile__financialAssets__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.profile__financialAssets__list__item {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+  font-size: 12px;
+}

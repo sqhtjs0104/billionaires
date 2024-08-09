@@ -1,0 +1,12 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
+  gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
