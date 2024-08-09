@@ -29,7 +29,7 @@ export interface IProfile {
   country: string;
   position: number;
   industries: string[];
-  financialAssets: IFinancialAsset[];
+  financialAssets?: IFinancialAsset[];
   squareImage: string;
   bio: string[];
   about: string[];
