@@ -23,7 +23,7 @@ export default async function FinancialAssets({
                 <span>Shares: {asset.sharePrice}</span>
               }
               {
-                asset.exchange &&
+                asset.exerciseOptionPrice &&
                 <span>Excercise Price: ${asset.exerciseOptionPrice}</span>
               }
             </div>
